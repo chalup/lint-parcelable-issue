@@ -1,5 +1,6 @@
 package com.getbase.lintparcelableissue;
 
+import android.content.Context;
 import android.os.Parcel;
 
 public class ROF extends ABFBO {
@@ -21,4 +22,8 @@ public class ROF extends ABFBO {
       return new ROF[size];
     }
   };
+
+  public String boom(Context context) {
+    return context.getString(R.string.used_in_rof);
+  }
 }
